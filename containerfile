@@ -13,7 +13,8 @@ RUN apk update && \
 
 RUN pip install \
     selenium \
-    tabulate
+    tabulate \
+    pyyaml
 
  RUN curl -sSL \
         https://bitbucket.org/ariya/phantomjs/downloads/${PHANTOM_BINARY} \
@@ -31,6 +32,6 @@ RUN curl -sSL \
     mv geckodriver /usr/bin/ && \
     rm ${GECKO_PACKAGE}
 
-COPY ./src/main.py /main.py
+COPY ./src/* /
 
 ENTRYPOINT ["python", "main.py"]

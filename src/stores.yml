@@ -1,0 +1,29 @@
+---
+# - - BIKESONLINE
+#   - findify-components--cards--product__title
+#   - findify-components--cards--product--price__sale-price
+#   - https://www.bikesonline.com/bikes/mountain-bikes/mountain-dual-suspension/?filters%5Bcategory1%5D%5B0%5D%5B0%5D=Bikes&filters%5Bcustom_fields.availability_info%5D%5B0%5D=in%20stock&filters%5Bcustom_fields.ride_style%5D%5B0%5D=Trail&filters%5Bcustom_fields.wheel_size%5D%5B0%5D=29%20inch
+- - BIKEMART
+  - seProductTitle
+  - seRegularPrice
+  - https://www.bikemart.com/product-list/bikes-1000/?&rb_av=instore&rb_ct=1008&rb_sz=Large
+- - JENSONUSA
+  - product-name
+  - product-price-saleprice
+  - https://www.jensonusa.com/Mountain-Bikes?WheelSize=29%22&Gender=Men&Size=Large&MultiValueIntendedUse=Trail+%2f+All-Mountain
+- - CADENCE
+  - seProductTitle
+  - seRegularPrice
+  - https://www.cadencecyclery.com/product-list/bikes-1000/mountain-1006/?rb_av=instore&rb_ct=1008&rb_sz=Large
+- - CONTENDER
+  - Card__title
+  - price_range
+  - https://contenderbicycles.com/collections/collection-mountain/build-type-bike+collection-mountain+activity-type-trail+size-l
+- - SUNSKI
+  - product__name-wrap
+  - price-group
+  - https://www.sunandski.com/c/mountain-bikes?facetValueFilter=tenant~type%3atrail+and+all-mountain%2ctenant~type%3amountain%2ctenant~wheel-size%3a29%22%2ctenant~number-of-gears%3a11+to+20%2ctenant~gender%3aunisex%2ctenant~gender%3amen-s%2ctenant~size%3a3&
+- - CHAINREACTION
+  - description
+  - fromamt
+  - https://www.chainreactioncycles.com/us/en/mountain-bikes/full-suspension?f=2247,4293825293,4294957821

@@ -71,6 +71,13 @@ The default returns a list of trail/all-mountain bikes, size large and in-store/
 ## Customizing the search
 
 - It should be relatively self-explanatory, so just start by looking under `./src/main.py`
+- You can add more online MTB stores to scrape by editing `./src/stores.yml`
+  - `stores.yml` is a list of lists
+  - It needs 4 elements:
+    1. A simple store name; i.e. `BIKEMART`
+    2. An HTML class name that identifies bikes on their catalogue; i.e. `seProductTitle`
+    3. An HTML class name that identifies the price for a bike on their catalogue; i.e. `seRegularPrice`
+    4. The URL pointing to the _filtered_ results you want to scrape and parse, desperately looking for bikes in stock :)
 
 ## Final notes
 
