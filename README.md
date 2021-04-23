@@ -2,6 +2,14 @@
 
 I am officially tired for scanning MTB online stores for available bikes. Going the lazy route.
 
+## What does this atrocity do?
+
+This project uses a bit of crude Python, Firefox Selenium WebDriver and Docker to headlessly navigate to a set list of online bike stores, using pre-filtered catalogue URLs, scraping the results of bikes and prices. And finally presenting them back to you in tabular format.
+
+### Why did I do this?
+
+Primarily because I am tired of repeating myself over and over again. I much rather let the pigeons inside my workstation (or yours) do the work instead. Also, ***because why not***?
+
 ## Instructions
 
 ### Clone and Build
