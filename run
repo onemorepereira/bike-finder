@@ -5,9 +5,11 @@ PODMAN=$(which podman > /dev/null 2>&1)
 IMG_TAG="bike-finder:latest"
 
 if [ $? -eq 0 ]; then
-    podman build --tag ${IMG_TAG} --file containerfile
-    podman run ${IMG_TAG}
+    CBUILDER=podman
+
 elif [ $? -eq 1 ]; then
-    docker build --tag ${IMG_TAG} --file containerfile
-    docker run ${IMG_TAG}
+    CBUILDER=docker
 fi
+
+${CBUILDER} build --quiet --tag ${IMG_TAG} --file containerfile
+${CBUILDER} run ${IMG_TAG}
