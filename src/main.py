@@ -20,6 +20,7 @@ driver = webdriver.Firefox(options=opts)
 
 for store in STORES:
     logging.info('{} - scraping'.format(store[0]))
+    driver = webdriver.Firefox(options=opts)
     try:
         driver.get(store[3])
         products = driver.find_elements_by_class_name(store[1]) #returns available bike models
@@ -29,6 +30,10 @@ for store in STORES:
             bikes.append({'store': store[0], 'name': product.text.replace('\n',' ').upper(), 'price': price.text.replace(',','')})
     except:
         logging.error('{}'.format(store[0]))
+    finally:
+        products = None
+        prices   = None
+        driver.quit()
 
 table = tabulate(sorted(bikes, key = lambda i: i['store']), headers="keys", tablefmt="simple")
 print(table)
