@@ -4,7 +4,7 @@ from tabulate import tabulate
 import logging
 import yaml
 
-logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 with open("stores.yml", 'r') as stream:
     try:
