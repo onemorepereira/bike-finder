@@ -1,12 +1,12 @@
 ---
-# - - BIKESONLINE
-#   - findify-components--cards--product__title
-#   - findify-components--cards--product--price__sale-price
-#   - https://www.bikesonline.com/bikes/mountain-bikes/mountain-dual-suspension/?filters%5Bcategory1%5D%5B0%5D%5B0%5D=Bikes&filters%5Bcustom_fields.availability_info%5D%5B0%5D=in%20stock&filters%5Bcustom_fields.ride_style%5D%5B0%5D=Trail&filters%5Bcustom_fields.wheel_size%5D%5B0%5D=29%20inch
+- - BIKESONLINE
+  - findify-components--cards--product__title
+  - findify-components--cards--product--price__sale-price
+  - https://www.bikesonline.com/bikes/mountain-bikes/mountain-dual-suspension/?filters%5Bcategory1%5D%5B0%5D%5B0%5D=Bikes&filters%5Bcustom_fields.availability_info%5D%5B0%5D=in%20stock&filters%5Bcustom_fields.ride_style%5D%5B0%5D=Trail&filters%5Bcustom_fields.wheel_size%5D%5B0%5D=29%20inch
 - - BIKEMART
   - seProductTitle
   - seRegularPrice
-  - https://www.bikemart.com/product-list/bikes-1000/?&rb_av=instore&rb_ct=1008&rb_sz=Large
+  - https://www.bikemart.com/product-list/bikes-1000/?&rb_av=instore&rb_ct=1008&rb_sz=Large&rb_pr=2000-3499.99
 - - JENSONUSA
   - product-name
   - product-price-saleprice
@@ -14,16 +14,48 @@
 - - CADENCE
   - seProductTitle
   - seRegularPrice
-  - https://www.cadencecyclery.com/product-list/bikes-1000/mountain-1006/?rb_av=instore&rb_ct=1008&rb_sz=Large
+  - https://www.cadencecyclery.com/product-list/bikes-1000/mountain-1006/?rb_av=instore&rb_ct=1008&rb_sz=Large&rb_pr=3500-5999.99
+- - CADENCE
+  - seProductTitle
+  - seRegularPrice
+  - https://www.cadencecyclery.com/product-list/bikes-1000/mountain-1006/?rb_av=instore&rb_ct=1008&rb_sz=Large&?rb_pr=2000-3499.99
 - - CONTENDER
   - Card__title
   - price_range
-  - https://contenderbicycles.com/collections/collection-mountain/build-type-bike+collection-mountain+activity-type-trail+size-l
+  - https://contenderbicycles.com/collections/collection-mountain/build-type-bike+collection-mountain+activity-type-trail+size-l+2500-3000
+- - CONTENDER
+  - Card__title
+  - price_range
+  - https://contenderbicycles.com/collections/collection-mountain/build-type-bike+collection-mountain+activity-type-trail+size-l+2000-2500
+- - CONTENDER
+  - Card__title
+  - price_range
+  - https://contenderbicycles.com/collections/collection-mountain/build-type-bike+collection-mountain+activity-type-trail+size-l+3000-4000
 - - SUNSKI
   - product__name-wrap
   - price-group
-  - https://www.sunandski.com/c/mountain-bikes?facetValueFilter=tenant~type%3atrail+and+all-mountain%2ctenant~type%3amountain%2ctenant~wheel-size%3a29%22%2ctenant~number-of-gears%3a11+to+20%2ctenant~gender%3aunisex%2ctenant~gender%3amen-s%2ctenant~size%3a3&
+  - https://www.sunandski.com/c/mountain-bikes?facetValueFilter=tenant~type%3atrail+and+all-mountain%2ctenant~type%3amountain%2ctenant~wheel-size%3a29%22%2ctenant~number-of-gears%3a11+to+20%2ctenant~gender%3aunisex%2ctenant~gender%3amen-s%2ctenant~size%3a3%2cprice%3a%5b2000+TO+*%5d&
 - - CHAINREACTION
   - description
   - fromamt
-  - https://www.chainreactioncycles.com/us/en/mountain-bikes/full-suspension?f=2247,4293825293,4294957821
+  - https://www.chainreactioncycles.com/us/en/mountain-bikes/full-suspension?f=2247,4293825293,4294957821&pf=100&pt=5000
+- - EVO
+  - product-thumb-title
+  - product-thumb-price
+  - https://www.evo.com/shop/bike/bikes/mountain-bikes/mens/size_l/wheel-size_29/online/used-for_trail/used-for_all-mountain-enduro
+- - MIKESBIKES
+  - grid-product__title--heading
+  - grid-product__price
+  - https://mikesbikes.com/collections/mountain-bikes-trail-downhill/in-stock+large-57-59+category_full-suspension
+- - BIKECONNECTION
+  - seProductTitle
+  - seRegularPrice
+  - https://www.bikeconnection.net/product-list/mountain-1006/full-suspension-1008/?rb_av=instore&rb_sz=Large
+- - CANFIELD
+  - product-card__title
+  - price__regular
+  - https://canfieldbikes.com/collections/tilt-trail-am-29er/full-suspension
+- - SUMMIT
+  - seProductTitle
+  - seRegularPrice
+  - https://www.summitbicycles.com/product-list/bikes-1000/mountain-1006/?rb_ct=1008&rb_sz=Large&rb_av=instore&rb_pr=2000%2D3499%2E99
