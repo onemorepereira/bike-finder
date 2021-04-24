@@ -32,6 +32,7 @@ RUN curl -sSL \
     mv geckodriver /usr/bin/ && \
     rm ${GECKO_PACKAGE}
 
-COPY ./src/* /
+COPY ./src/main.py /
+COPY ./src/stores.yml /
 
 ENTRYPOINT ["python", "main.py"]
