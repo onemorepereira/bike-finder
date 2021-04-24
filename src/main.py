@@ -37,5 +37,3 @@ for store in STORES:
 
 table = tabulate(sorted(bikes, key = lambda i: i['store']), headers="keys", tablefmt="simple")
 print(table)
-
-driver.quit()
