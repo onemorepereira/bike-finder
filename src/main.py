@@ -19,12 +19,16 @@ opts.headless=True
 driver = webdriver.Firefox(options=opts)
 
 for store in STORES:
-    logging.info('Scrapping {}'.format(store[0]))
-    driver.get(store[3])
-    products = driver.find_elements_by_class_name(store[1]) #returns available bike models
-    prices   = driver.find_elements_by_class_name(store[2]) #return available bike prices
-    for product, price in zip(products, prices):
-        bikes.append({'store': store[0], 'name': product.text.replace('\n',' ').upper(), 'price': price.text.replace(',','')})
+    logging.info('{} - scraping'.format(store[0]))
+    try:
+        driver.get(store[3])
+        products = driver.find_elements_by_class_name(store[1]) #returns available bike models
+        prices   = driver.find_elements_by_class_name(store[2]) #return available bike prices
+        logging.info('{} - found {} bikes'.format(store[0], len(products)))
+        for product, price in zip(products, prices):
+            bikes.append({'store': store[0], 'name': product.text.replace('\n',' ').upper(), 'price': price.text.replace(',','')})
+    except:
+        logging.error('{}'.format(store[0]))
 
 table = tabulate(sorted(bikes, key = lambda i: i['store']), headers="keys", tablefmt="simple")
 print(table)
